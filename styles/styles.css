@@ -1,0 +1,330 @@
+/* general styles */
+@import url(reset.css);
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/vazir.woff2') format('woff2'), 
+     url('../fonts/vazir.woff') format('woff'), 
+     url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,input,button {
+    font-family: vazirNormal;
+}
+
+body {
+    direction: rtl;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(195deg,rgba(13,71,161,1)0%,rgba(30,136,229,1)100%);
+}
+
+#header .logo {
+    float: right;
+    padding-top: 10px;
+}
+
+#header .logo img{
+    width: 60px;
+}
+
+/* Navigation */
+
+#nav {
+    float: left;
+    padding-top: 20px;
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    padding: 5px 10px;
+    transition: 0.25s;
+}
+
+#nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.25s;
+}
+
+#nav svg {
+    font-size: 23px;
+    margin-left: 3px;
+    vertical-align: -6px;
+}
+
+#nav .fa-store {
+    font-size: 20px;
+}
+
+
+/* Subscribe */
+
+#subscribe {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#subscribe .title {
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#subscribe .subtitle {
+    font-size: 25px;
+    color: #fff;
+    padding: 40px 0;
+}
+
+#subscribe .form .email {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 380px;
+}
+
+#subscribe .form .submit-btn {
+    border: none;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: #212326;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-shadow:  0 5px 15px 0 rgb(0 0 0 / 15%);;
+}
+
+#subscribe .form .submit-btn:hover {
+    box-shadow:  0 5px 25px 0 rgb(0 0 0 / 25%);
+    cursor: pointer;
+}
+
+#subscribe .form .submit-btn svg {
+    margin-right: 6px;
+    font-size: 16px;
+    vertical-align: -5px;
+}
+
+#subscribe .desc {
+    padding-top: 40px;
+    color: #fff;
+}
+
+#subscribe .header-image {
+    position: relative;
+    top: 50px;
+}
+
+/* Why us */
+
+#whyus {
+    margin-top: 400px;
+    text-align: center;
+}
+
+#whyus .item {
+    width: 30%;
+    /* height: 100px; */
+    margin: 15px;
+    /* background-color: red; */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: right;
+    /* transition: 0.25s; */
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+}
+
+#whyus .item:hover {
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 25%);
+}
+
+#whyus .item .logo svg {
+font-size: 50px;
+color: rgb(13, 71, 161);
+}
+
+#whyus .item .title {
+    font-size: 23px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+#whyus .item .desc {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* Customers */
+
+#customers {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    margin-top: 50px;
+    background-image: url('../images/ny.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#customers h2 {
+    font-size: 30px;
+    padding: 25px 0;
+    color: #fff;
+}
+
+#customers h2::before {
+    content: ".:";
+}
+
+#customers h2::after {
+    content: ":.";
+}
+
+#customers li {
+    display: inline-block;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+#customers ul li img {
+    width: 120px;
+}
+
+#customers ul li img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Posts */
+
+#posts .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 25px 0;
+}
+
+#posts .post-item {
+    width: 30%;
+    height: 300px;
+    margin: 20px 15px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.25s;
+}
+
+#posts .post-item:hover {
+    box-shadow:0 5px 20px 0 rgb(0 0 0 / 25%); 
+}
+
+#posts .post-item .post-title {
+    padding: 10px 5px;
+    font-size: 20px;
+}
+
+#posts .post-item .post-title a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+#posts .post-item .post-title a:hover {
+    color: #404040;
+}
+
+#posts .post-item .post-img img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+}
+
+#posts .post-item .post-data {
+    font-size: 14px;
+}
+
+#posts .post-item .post-data .post-date {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+#posts .post-item .post-data .read-more {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+#posts .post-item .post-data .read-more  {
+    text-decoration: none;
+    color: #404040;
+}
+
+#posts .post-item .post-data .read-more:hover {
+    color: #2b2b2b;
+}
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-top: 30px;
+}
+
+#footer .socials {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#footer .socials li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#footer .socials li a {
+    color: #3d3d3d;
+}
+
+#footer .socials li a:hover {
+    color: #262626;
+}
+
+#footer .socials svg {
+    font-size: 35px;
+}
+
+#footer .copy-right {
+    background-color: #424242;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
